@@ -3,6 +3,8 @@ import json
 def search_json(json_data, search_string):
     
     results = []
+
+    #Search function returns which "User #" was entered by User.  '#' = 1-150
     for x in json_data:
         #print(len(x))
         if(x["User"] == search_string):
